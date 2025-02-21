@@ -277,7 +277,6 @@ app.patch("/posts/:id", (req, res) => {
 #### 1. Add delete button in `index.ejs`
 
 ```
-<br /><br />
 <form method="post" action="/posts/<%= post.id %>?_method=DELETE">
   <button>Delete</button>
 </form>
