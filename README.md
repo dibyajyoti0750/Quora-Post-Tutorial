@@ -63,7 +63,6 @@ To handle form submissions Express has built-in support, so update `index.js`:
 
 ```
 app.use(express.urlencoded({ extended: true }));
-
 ```
 
 ## Step 5: Creating the Posts Data Structure
@@ -123,7 +122,6 @@ h1 {
 
 ```
 <link rel="stylesheet" href="/styles.css" />
-
 ```
 
 ## Step 8: Adding a Form to Create a New Post
@@ -154,7 +152,6 @@ app.get("/posts/new", (req, res) => {
 
 ```
 <a href="http://localhost:8080/posts/new">Create New Post</a>
-
 ```
 
 ## Step 9: Handling Form Submission (POST Request)
@@ -224,7 +221,6 @@ app.get("/posts/:id", (req, res) => {
 
 ```
 <a href="/posts/<%= post.id %>">Show Post</a>
-
 ```
 
 ## Step 12: Adding Edit Feature (PATCH Request)
@@ -272,7 +268,6 @@ app.patch("/posts/:id", (req, res) => {
 
 ```
 <a href="/posts/<%= post.id %>/edit">Edit</a>
-
 ```
 
 ## Step 13: Adding Delete Feature
