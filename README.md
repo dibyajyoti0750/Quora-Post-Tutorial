@@ -239,9 +239,11 @@ app.use(methodOverride("_method"));
 #### 3. Create `views/edit.ejs`
 
 ```
-<title>Edit Post</title>
+<title>Edit</title>
+<h2>Edit Post</h2>
 <form method="post" action="/posts/<%= post.id %>?_method=PATCH">
   <textarea name="content"><%= post.content %></textarea>
+  <br />
   <button type="submit">Update</button>
 </form>
 ```
@@ -275,6 +277,7 @@ app.patch("/posts/:id", (req, res) => {
 #### 1. Add delete button in `index.ejs`
 
 ```
+<br /><br />
 <form method="post" action="/posts/<%= post.id %>?_method=DELETE">
   <button>Delete</button>
 </form>
