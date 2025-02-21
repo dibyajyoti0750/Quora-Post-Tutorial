@@ -3,6 +3,7 @@
 #### 1. Create a new project folder
 
 `mkdir Project-Folder`
+
 `cd Project-Folder`
 
 #### 2. Initialize npm
@@ -15,11 +16,11 @@
 
 ## Step 2: Setting Up the Server
 
-#### 1. Create index.js file in the root directory
+#### 1. Create `index.js` file in the root directory
 
 `touch index.js`
 
-#### 2. Write a basic Express server in index.js
+#### 2. Write a basic Express server in `index.js`
 
 ```
 const express = require("express");
@@ -46,7 +47,7 @@ app.listen(port, () => {
 
 `npm install ejs`
 
-#### 3. Configure EJS in index.js
+#### 3. Configure EJS in `index.js`
 
 ```
 const path = require("path");
@@ -60,7 +61,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 ## Step 4: Middleware Setup
 
-To handle form submissions Express has built-in support, so update index.js:
+To handle form submissions Express has built-in support, so update `index.js`:
 
 ```
 app.use(express.urlencoded({ extended: true }));
