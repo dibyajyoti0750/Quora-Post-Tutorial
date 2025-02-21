@@ -2,23 +2,23 @@
 
 #### 1. Create a new project folder
 
-`mkdir Project-Folder`
+`$ mkdir Project-Folder`
 
-`cd Project-Folder`
+`$ cd Project-Folder`
 
 #### 2. Initialize npm
 
-`npm init -y`
+`$ npm init -y`
 
 #### 3. Install Express.js
 
-`npm install express`
+`$ npm install express`
 
 ## Step 2: Setting Up the Server
 
 #### 1. Create `index.js` file in the root directory
 
-`touch index.js`
+`$ touch index.js`
 
 #### 2. Write a basic Express server in `index.js`
 
@@ -35,17 +35,17 @@ app.listen(port, () => {
 
 #### 3. Start the server
 
-`nodemon index.js`
+`$ nodemon index.js`
 
 ## Step 3: Setting Up Views & Public Folder
 
 #### 1. Create folders for views and static files
 
-`mkdir views public`
+`$ mkdir views public`
 
 #### 2. Install EJS for templating
 
-`npm install ejs`
+`$ npm install ejs`
 
 #### 3. Configure EJS in `index.js`
 
@@ -182,7 +182,7 @@ app.post("/posts", (req, res) => {
 
 #### 1. Install UUID
 
-`npm install uuid`
+`$ npm install uuid`
 
 #### 2. Update `index.js`
 
@@ -243,7 +243,7 @@ app.get("/posts/:id", (req, res) => {
 
 #### 1. Install method-override
 
-`npm install method-override`
+`$ npm install method-override`
 
 #### 2. Configure in `index.js`
 
